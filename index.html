@@ -1,15 +1,95 @@
 <html>
 <head>
-    <title>You Got Hacked!!!!!!!</title>
+<title>YOU GOT HACKED</title>
+
+<style>
+body {
+    background-color: black;
+    color: lime;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.glitch {
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0% {margin-left: 0;}
+    25% {margin-left: 2px;}
+    50% {margin-left: -2px;}
+    75% {margin-left: 2px;}
+    100% {margin-left: 0;}
+}
+
+pre {
+    color: lime;
+    font-size: 12px;
+    line-height: 1.1;
+}
+</style>
+
 </head>
-<body bgcolor="red">
 
-<h1>YOU GOT HACKED</h1>
-Your files got encrypted.
+<body>
 
-<a href="https://coinmarketcap.com/currencies/bitcoin/">
-    <button>Send BTC</button>
-</a>
+<pre class="glitch">
+██████╗ ███████╗███████╗███████╗ ██████╗ ██╗   ██╗██╗████████╗██╗   ██╗
+██╔══██╗██╔════╝██╔════╝██╔════╝██╔═══██╗██║   ██║██║╚══██╔══╝██║   ██║
+██████╔╝█████╗  ███████╗█████╗  ██║   ██║██║   ██║██║   ██║   ██║   ██║
+██╔══██╗██╔══╝  ╚════██║██╔══╝  ██║   ██║██║   ██║██║   ██║   ██║   ██║
+██║  ██║███████╗███████║███████╗╚██████╔╝╚██████╔╝██║   ██║   ╚██████╔╝
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝   ╚═╝    ╚═════╝ 
+
+    RSecurity Group
+</pre>
+
+<h1 class="glitch">Your Files Are Getting Encrypted</h1>
+
+<p>Accessing files...</p>
+<p>Decrypting data...</p>
+<p>Scraping data...</p>
+
+<p>Your IP: <span id="ip">Hidden</span></p>
+
+<button onclick="alert('You got fucked sorry.... Send BTC to maybe save your files lmao')">
+    Continue
+</button>
+
+<button onclick="alert('Bro Thought ahahah, send the BTC')">
+    Get Files
+</button>
+
+<button onclick="getIP()">
+    IP
+</button>
+
+<br><br>
+BTC Address: 1A82428194dhwduGDh38u4nIUy
+
+<script>
+function getIP() {
+  fetch("https://api.ipify.org?format=json")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("ip").innerText = data.ip;
+    })
+    .catch(() => {
+      document.getElementById("ip").innerText = "Unavailable";
+    });
+}
+</script>
 
 </body>
 </html>
