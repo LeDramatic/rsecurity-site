@@ -81,45 +81,46 @@ pre {
 }
 @media (max-width: 768px) {
     body {
-        padding-top: 90px;
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-top: 95px;
+        padding-left: 10px;
+        padding-right: 10px;
         overflow-x: hidden;
     }
 
     .top-left-logo {
         top: 12px;
         left: 12px;
-        font-size: 12px;
-        gap: 6px;
+        font-size: 16px;
+        gap: 8px;
     }
 
     .top-left-logo img {
-        width: 45px;
+        width: 58px;
     }
 
     pre {
-        font-size: 6px;
-        line-height: 1;
+        font-size: 8.5px;
+        line-height: 1.05;
         white-space: pre;
         overflow-x: auto;
         max-width: 100%;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 34px;
+        margin-top: 30px;
     }
 
     p {
-        font-size: 13px;
+        font-size: 17px;
         word-break: break-word;
     }
 
     .neon-btn {
-        width: 90%;
-        max-width: 260px;
-        font-size: 12px;
-        padding: 10px 12px;
-        margin: 8px auto;
+        width: 92%;
+        max-width: 330px;
+        font-size: 16px;
+        padding: 13px 14px;
+        margin: 10px auto;
     }
 }
