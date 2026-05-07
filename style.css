@@ -74,8 +74,10 @@ pre {
     font-family: monospace;
     font-size: 14px;
     z-index: 999;
+    border: 1px solid #00ff9c;
+    padding: 8px;
+    background: black;
 }
-
 .top-left-logo img {
     width: 90px;
     height: auto;
