@@ -81,7 +81,4 @@ pre {
 .top-left-logo img {
     width: 90px;
     height: auto;
-    filter:
-        drop-shadow(0 0 5px #00ff9c)
-        drop-shadow(0 0 10px #00ff9c);
 }
