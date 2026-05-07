@@ -1,74 +1,9 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>Is quite here...</title>
-
-<style>
-body {
-    background-color: black;
-    color: lime;
-    font-family: monospace;
-    text-align: center;
-    padding-top: 100px;
-}
-
-h1 {
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-.glitch {
-    animation: glitch 0.3s infinite;
-}
-
-@keyframes glitch {
-    0% {margin-left: 0;}
-    25% {margin-left: 2px;}
-    50% {margin-left: -2px;}
-    75% {margin-left: 2px;}
-    100% {margin-left: 0;}
-}
-
-pre {
-    color: lime;
-    font-size: 12px;
-    line-height: 1.1;
-}
-.neon-btn {
-    display: block;
-    width: 220px;
-    margin: 6px auto;
-    padding: 8px 12px;
-    font-size: 13px;
-    color: #00ff9c;
-    background: transparent;
-    border: 1px solid #00ff9c;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: monospace;
-
-    box-shadow:
-        0 0 4px #00ff9c,
-        inset 0 0 4px #00ff9c;
-
-    transition: 0.2s;
-}
-
-.neon-btn:hover {
-    background: #00ff9c;
-    color: black;
-    box-shadow:
-        0 0 10px #00ff9c,
-        0 0 20px #00ff9c;
-}
-</style>
-
+    <title>Is quite here...</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -114,18 +49,7 @@ pre {
     Arxaia Release
 </button>
 
+<script src="script.js"></script>
 
-<script>
-function getIP() {
-  fetch("https://api.ipify.org?format=json")
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById("ip").innerText = data.ip;
-    })
-    .catch(() => {
-      document.getElementById("ip").innerText = "Unavailable";
-    });
-}
-</script>
 </body>
 </html>
