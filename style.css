@@ -74,19 +74,8 @@ pre {
     font-family: monospace;
     font-size: 14px;
     z-index: 999;
-    border: 1px solid #00ff9c;
-    padding: 8px;
-    background: black;
 }
 .top-left-logo img {
-    width: 90px;
+    width: 70px;
     height: auto;
-
-    background: rgba(0, 255, 156, 0.08);
-    border-radius: 50%;
-    padding: 6px;
-
-    filter:
-        drop-shadow(0 0 5px #00ff9c)
-        drop-shadow(0 0 10px #00ff9c);
 }
