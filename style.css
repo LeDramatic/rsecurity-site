@@ -79,3 +79,47 @@ pre {
     width: 70px;
     height: auto;
 }
+@media (max-width: 768px) {
+    body {
+        padding-top: 90px;
+        padding-left: 12px;
+        padding-right: 12px;
+        overflow-x: hidden;
+    }
+
+    .top-left-logo {
+        top: 12px;
+        left: 12px;
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .top-left-logo img {
+        width: 45px;
+    }
+
+    pre {
+        font-size: 6px;
+        line-height: 1;
+        white-space: pre;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 13px;
+        word-break: break-word;
+    }
+
+    .neon-btn {
+        width: 90%;
+        max-width: 260px;
+        font-size: 12px;
+        padding: 10px 12px;
+        margin: 8px auto;
+    }
+}
