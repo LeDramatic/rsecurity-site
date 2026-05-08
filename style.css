@@ -74,7 +74,6 @@ pre {
 .top-left-logo img {
     width: 70px;
     height: auto;
-    filter: drop-shadow(0 0 5px #00ff9c) drop-shadow(0 0 10px #00ff9c);
 }
 
 @media (max-width: 768px) {
@@ -121,4 +120,12 @@ pre {
         padding: 13px 14px;
         margin: 10px auto;
     }
+}
+.footer {
+    margin-top: 60px;
+    padding: 20px;
+    color: #00ff9c;
+    font-family: monospace;
+    font-size: 13px;
+    opacity: 0.7;
 }
