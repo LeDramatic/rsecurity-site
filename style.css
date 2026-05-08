@@ -11,9 +11,9 @@ h1 {
 }
 
 @keyframes blink {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .glitch {
@@ -21,11 +21,11 @@ h1 {
 }
 
 @keyframes glitch {
-    0% {margin-left: 0;}
-    25% {margin-left: 2px;}
-    50% {margin-left: -2px;}
-    75% {margin-left: 2px;}
-    100% {margin-left: 0;}
+    0% { margin-left: 0; }
+    25% { margin-left: 2px; }
+    50% { margin-left: -2px; }
+    75% { margin-left: 2px; }
+    100% { margin-left: 0; }
 }
 
 pre {
@@ -48,21 +48,16 @@ pre {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: monospace;
-
-    box-shadow:
-        0 0 4px #00ff9c,
-        inset 0 0 4px #00ff9c;
-
+    box-shadow: 0 0 4px #00ff9c, inset 0 0 4px #00ff9c;
     transition: 0.2s;
 }
 
 .neon-btn:hover {
     background: #00ff9c;
     color: black;
-    box-shadow:
-        0 0 10px #00ff9c,
-        0 0 20px #00ff9c;
+    box-shadow: 0 0 10px #00ff9c, 0 0 20px #00ff9c;
 }
+
 .top-left-logo {
     position: fixed;
     top: 20px;
@@ -77,9 +72,53 @@ pre {
 }
 
 .top-left-logo img {
-    width: 90px;
+    width: 70px;
     height: auto;
-    filter:
-        drop-shadow(0 0 5px #00ff9c)
-        drop-shadow(0 0 10px #00ff9c);
+    filter: drop-shadow(0 0 5px #00ff9c) drop-shadow(0 0 10px #00ff9c);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 95px;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-x: hidden;
+    }
+
+    .top-left-logo {
+        top: 12px;
+        left: 12px;
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .top-left-logo img {
+        width: 58px;
+    }
+
+    pre {
+        font-size: 8.5px;
+        line-height: 1.05;
+        white-space: pre;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 17px;
+        word-break: break-word;
+    }
+
+    .neon-btn {
+        width: 92%;
+        max-width: 330px;
+        font-size: 16px;
+        padding: 13px 14px;
+        margin: 10px auto;
+    }
 }
