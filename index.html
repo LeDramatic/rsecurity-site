@@ -1,66 +1,60 @@
-
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Is quite here...</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="top-left-logo">
-    <img src="logo.png" alt="Logo">
-    <span>Group</span>
-</div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
 
-<pre class="glitch">
-██████╗ ███████╗███████╗ ██████╗██╗   ██╗██████╗ ██╗████████╗██╗   ██╗    
-██╔══██╗██╔════╝██╔════╝██╔════╝██║   ██║██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝    
-██████╔╝███████╗█████╗  ██║     ██║   ██║██████╔╝██║   ██║    ╚████╔╝     
-██╔══██╗╚════██║██╔══╝  ██║     ██║   ██║██╔══██╗██║   ██║     ╚██╔╝      
-██║  ██║███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║       
-╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝    
+    <div class="top-left-logo">
+        <img src="logo.png" alt="Logo">
+        <span>Group</span>
+    </div>
 
-    RSecurity Group
-</pre>
+    <div class="status-bar">
+        <span class="status-dot"></span> SECURE CONNECTION ESTABLISHED
+    </div>
 
-<h1 class="glitch">Website</h1>
+    <main>
+        <pre class="glitch ascii-art">
+    ██████╗ ███████╗███████╗ ██████╗██╗   ██╗██████╗ ██╗████████╗██╗   ██╗
+    ██╔══██╗██╔════╝██╔════╝██╔════╝██║   ██║██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝
+    ██████╔╝███████╗█████╗  ██║     ██║   ██║██████╔╝██║   ██║    ╚████╔╝ 
+    ██╔══██╗╚════██║██╔══╝  ██║     ██║   ██║██╔══██╗██║   ██║     ╚██╔╝  
+    ██║  ██║███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║   
+  ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝ 
+    </pre>
 
-<p>Your IP: <span id="ip">Hidden</span></p>
+        <h1 class="glitch" data-text="Website">Website</h1>
 
 
-<button class="neon-btn" onclick="alert('nah nah')">
-    Continue
-</button>
+        <div class="info-card">
+            <span class="info-label">IP ADDRESS</span>
+            <span id="ip" class="info-value">HIDDEN</span>
+        </div>
 
-<button class="neon-btn" onclick="alert('Again, No')">
-    Get Files
-</button>
+        <div class="info-card" id="locationCard" style="display:none;">
+            <span class="info-label">LOCATION</span>
+            <span id="locationResult" class="info-value"></span>
+        </div>
 
-<button class="neon-btn" onclick="getIP()">
-    Show IP
-</button>
+        <div class="btn-group">
+            <button class="neon-btn" onclick="alert('nah nah')">Continue</button>
+            <button class="neon-btn" onclick="alert('Again, No')">Get Files</button>
+            <button class="neon-btn" onclick="getIP()">Show IP</button>
+            <button class="neon-btn" onclick="showAccurateLocation()">Show Accurate Location</button>
+            <button class="neon-btn external" onclick="window.open('https://69e517731083cf36dd20ed50--celebrated-rugelach-1b0349.netlify.app/', '_blank')">ArxaiaBeta2 ↗</button>
+            <button class="neon-btn external" onclick="window.open('https://euphonious-starlight-6d8676.netlify.app/', '_blank')">Arxaia Release ↗</button>
+        </div>
+    </main>
 
-<button class="neon-btn" onclick="showAccurateLocation()">
-    Show Accurate Location
-</button>
+    <footer class="footer">
+        © RSecurity Group 2026 - All Rights Reserved
+    </footer>
 
-<p id="locationResult"></p>
-
-<button class="neon-btn" onclick="window.open('https://69e517731083cf36dd20ed50--celebrated-rugelach-1b0349.netlify.app/', '_blank')">
-    ArxaiaBeta2
-</button>
-
-<button class="neon-btn" onclick="window.open('https://euphonious-starlight-6d8676.netlify.app/', '_blank')">
-    Arxaia Release
-</button>
-
-<script src="script.js"></script>
-
-<footer class="footer">
-    © RSecurity Group 2026 — All Rights Reserved
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
