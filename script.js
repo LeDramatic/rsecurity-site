@@ -14,6 +14,7 @@ function getIP() {
 function showAccurateLocation() {
   const result = document.getElementById("locationResult");
   result.textContent = "Waiting for permission...";
+  document.getElementById("locationCard").style.display = "block";
 
   navigator.geolocation.getCurrentPosition(
     (position) => {
@@ -21,7 +22,11 @@ function showAccurateLocation() {
       const lon = position.coords.longitude.toFixed(5);
       const accuracy = Math.round(position.coords.accuracy);
 
-      result.innerHTML = `Lat: ${lat} | Lon: ${lon} | Accuracy: ~${accuracy}m`;
+      result.innerHTML = `<br>
+Lat: ${lat}<br>
+Lon: ${lon}<br>
+Accuracy: ~${accuracy}m
+`;
 
       // Send to backend type shi 😭✌️
       fetch(`${API_BASE_URL}/api/location`, {
