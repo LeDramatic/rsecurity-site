@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://rsecurity-backend.onrender.com";
+const API_BASE_URL = "https://api.rsecurity.top";
 
 function getIP() {
   fetch(`${API_BASE_URL}/api/ip`)
